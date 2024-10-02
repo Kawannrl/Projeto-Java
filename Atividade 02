@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CalculadoraIMC {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String imc;
+        float peso, altura;
+
+        System.out.print("Digite sua altura: ");
+        altura = scanner.nextFloat();
+        System.out.print("Digite seu peso: ");
+        peso = scanner.nextFloat();
+
+        System.out.println ("Seu IMC é: " + peso / (altura * altura));
+    }
+}
