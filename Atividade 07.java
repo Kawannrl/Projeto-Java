@@ -14,8 +14,9 @@ public class Media {
             num = scanner.nextInt ();
 
             soma = soma + num;
-            media = soma / quantidade;
         }
+        media = soma / quantidade;
+        
         System.out.println ("A média dos números é: " + media);
     }
 }
