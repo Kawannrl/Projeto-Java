@@ -12,8 +12,10 @@ public class Menu {
 
             switch (opcao){
                 case 1:
+                    Compra.compra ();
                     break;
                 case 2:
+                    Desistencia.desistencia ();
                     break;
                 case 3:
                     Status.status ();
@@ -25,7 +27,6 @@ public class Menu {
                     System.out.println ("Encerrando...");
                     System.exit (0);
             }
-
         } while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5);
     }
 }
