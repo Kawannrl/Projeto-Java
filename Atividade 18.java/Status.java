@@ -60,6 +60,7 @@ public class Status {
         if (assento [linha][coluna][andar] == false){
             assento [linha][coluna][andar] = true;
             System.out.println ("A compra do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
+            Logs.logs (andar,linha, coluna,"Compra");
         }
         else {
             System.out.println ("O assento escohido já foi comprado!");
@@ -69,6 +70,15 @@ public class Status {
     }
 
     public static void cancelar (int andar, int linha, int coluna){
-
+        if (assento [linha][coluna][andar] == true){
+            assento [linha][coluna][andar] = false;
+            System.out.println ("O cancelamento do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
+            Logs.logs (andar,linha, coluna,"Desistência");
+        }
+        else {
+            System.out.println ("Erro no cancelamento do assento!");
+            System.out.println ("Tente novamento!");
+            Desistencia.desistencia ();
+        }
     }
 }
