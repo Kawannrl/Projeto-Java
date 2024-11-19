@@ -8,29 +8,34 @@ public class Compra {
         int coluna = 0;
         int andar = 0;
 
-        System.out.println ("Informe em qual andar você quer ficar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
-        andar = scanner.nextInt ();
-
-        if (andar >= 1 || andar <= 3){
+        do {
+            System.out.println ("Informe em qual andar você quer ficar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
+            andar = scanner.nextInt ();
             System.out.println("Informe o assento escolhido: ");
+
             System.out.print("Linha: ");
             linha = scanner.nextInt();
-            System.out.print("Coluna: ");
-            coluna = scanner.nextInt();
-            System.out.println();
 
-            andar--;
+            do {
+                System.out.print("Coluna: ");
+                coluna = scanner.nextInt();
+                System.out.println();
 
-            Status.comprar(andar, linha, coluna);
+                andar--;
 
-            System.out.println();
-            System.out.println("O que deseja agora? ");
-            System.out.println();
-            Menu.menu();
+                Status.comprar(andar, linha, coluna);
+
+                System.out.println();
+                System.out.println("O que deseja agora? ");
+                System.out.println();
+                Menu.menu();
+            }
+            while (linha >= 1 && linha <= 50);
+
+            Erros.linha_invalida ("Linha inválida");
         }
-        else {
-            System.out.println ("Erro!!!");
-            System.out.println ("Escolha um número de 1 á 3!");
-        }
+        while (andar != 1 && andar != 2 && andar != 3);
+
+        Erros.andar_invalido ("Andar inválido");
     }
 }
