@@ -30,8 +30,10 @@ public class Menu {
                     System.exit (0);
                     break;
                 default:
+                    System.out.println ();
                     System.out.println ("Erro!!!");
                     System.out.println ("Escolha uma opção de 1 á 5!");
+                    System.out.println ();
             }
         } while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5);
     }
