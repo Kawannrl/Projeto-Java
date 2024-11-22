@@ -7,9 +7,9 @@ public class Menu {
         int opcao;
 
         do {
-            System.out.println("Escolha uma das opções: \n1 - Comprar Ingresso\n2 - Cancelar Ingresso\n3 - Assentos\n4 - Histórico de Compras\n5 - Sair");
+            System.out.println ("Escolha uma das opções: \n1 - Comprar Ingresso\n2 - Cancelar Ingresso\n3 - Assentos\n4 - Histórico de Compras\n5 - Sair");
             System.out.print ("Resposta: ");
-            opcao = scanner.nextInt();
+            opcao = scanner.nextInt ();
 
             switch (opcao){
                 case 1:
@@ -25,8 +25,12 @@ public class Menu {
                     Logs.imprimir ();
                     break;
                 case 5:
-                    System.out.println ("O programa está sndo encerrado pelo usuário!");
+                    System.out.println ();
+                    System.out.println ("O programa está sendo encerrado pelo usuário!");
                     System.out.println ("Encerrando...");
+                    System.out.println ();
+                    Erros.encerrar_sistema ("Encerramento do sistema");
+                    Erros.imprimir_erros ();
                     System.exit (0);
                     break;
                 default:
