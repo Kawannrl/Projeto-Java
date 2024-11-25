@@ -1,15 +1,12 @@
-import java.util.Scanner;
-
 public class Menu {
     public static void menu (){
-        Scanner scanner = new Scanner (System.in);
 
         int opcao;
 
         do {
             System.out.println ("Escolha uma das opções: \n1 - Comprar Ingresso\n2 - Cancelar Ingresso\n3 - Assentos\n4 - Histórico de Compras\n5 - Sair");
             System.out.print ("Resposta: ");
-            opcao = scanner.nextInt ();
+            opcao = Entrada.entrada_menu ();
 
             switch (opcao){
                 case 1:
