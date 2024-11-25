@@ -1,17 +1,14 @@
-import java.util.Scanner;
-
 public class Status {
 
     static boolean [][][] assento = new boolean [60][60][3];
     public static void status (){
-        Scanner scanner = new Scanner (System.in);
 
         int andar = 0;
 
         do {
             System.out.println ();
             System.out.println ("Informe em qual andar você quer ficar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar\n");
-            andar = scanner.nextInt ();
+            andar = Entrada.entrada_andar ();
 
             if (andar == 1){
                 for (int i = 1; i < 31; i++){
@@ -69,7 +66,6 @@ public class Status {
     public static void comprar (int andar, int linha, int coluna){
         if (assento [linha][coluna][andar] == false){
             assento [linha][coluna][andar] = true;
-            System.out.println ();
             System.out.println ("A compra do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
             Logs.logs (andar,linha, coluna,"Compra");
         }
@@ -83,7 +79,6 @@ public class Status {
     public static void cancelar (int andar, int linha, int coluna){
         if (assento [linha][coluna][andar] == true){
             assento [linha][coluna][andar] = false;
-            System.out.println ();
             System.out.println ("O cancelamento do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
             Logs.logs (andar,linha, coluna,"Desistência");
         }
