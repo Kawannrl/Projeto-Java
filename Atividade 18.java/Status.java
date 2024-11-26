@@ -66,8 +66,8 @@ public class Status {
     public static void comprar (int andar, int linha, int coluna){
         if (assento [linha][coluna][andar] == false){
             assento [linha][coluna][andar] = true;
+            Pagamento.pagamento (andar,linha, coluna,"Comprar");
             System.out.println ("A compra do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
-            Logs.logs (andar,linha, coluna,"Compra");
         }
         else {
             Erros.poltrona_invalida ("Poltrona inválida");
@@ -79,8 +79,8 @@ public class Status {
     public static void cancelar (int andar, int linha, int coluna){
         if (assento [linha][coluna][andar] == true){
             assento [linha][coluna][andar] = false;
+            Pagamento.pagamento (andar,linha, coluna,"Desistência");
             System.out.println ("O cancelamento do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
-            Logs.logs (andar,linha, coluna,"Desistência");
         }
         else {
             Erros.desistencia_cadeira ("Desistência de cadeira livre");
