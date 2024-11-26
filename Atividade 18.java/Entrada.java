@@ -41,7 +41,7 @@ public class Entrada {
             System.out.println ("Esse valor é inválido para o andar!");
             System.out.println ();
             Erros.andar_invalido ("Andar inválido");
-            Menu.menu ();
+            Status.status ();
         }
         return -1;
     }
@@ -179,7 +179,76 @@ public class Entrada {
             System.out.println ("Esse valor é inválido para a coluna!");
             System.out.println ();
             Erros.coluna_invalida ("Coluna inválida");
-            Desistencia.desistencia();
+            Desistencia.desistencia ();
+        }
+        return -1;
+    }
+
+    public static int entrada_pagamento (){
+        Scanner scanner = new Scanner (System.in);
+
+        int forma_pagamento;
+
+        if (scanner.hasNextInt ()){
+            forma_pagamento = scanner.nextInt ();
+            System.out.println ();
+            System.out.println ("Você digitou o número inteiro " + forma_pagamento);
+            System.out.println ();
+            return forma_pagamento;
+        }
+        else {
+            System.out.println ();
+            System.out.println ("Opção inválida!!!");
+            System.out.println ("Esse valor é inválido para a forma de pagamento!");
+            System.out.println ("Tente novamente!");
+            System.out.println ();
+            Compra.compra ();
+        }
+        return -1;
+    }
+
+    public static int entrada_pagamento_debito (){
+        Scanner scanner = new Scanner (System.in);
+
+        int senha;
+
+        if (scanner.hasNextInt ()){
+            senha = scanner.nextInt ();
+            System.out.println ();
+            System.out.println ("Você digitou o número inteiro " + senha);
+            System.out.println ();
+            return senha;
+        }
+        else {
+            System.out.println();
+            System.out.println ("Opção inválida!!!");
+            System.out.println ("Esse valor é inválido para a senha!");
+            System.out.println ("Tente novamente!");
+            System.out.println ();
+            Compra.compra ();
+        }
+        return -1;
+    }
+
+    public static int entrada_pagamento_credito (){
+        Scanner scanner = new Scanner (System.in);
+
+        int senha;
+
+        if (scanner.hasNextInt ()){
+            senha = scanner.nextInt ();
+            System.out.println ();
+            System.out.println ("Você digitou o número inteiro " + senha);
+            System.out.println ();
+            return senha;
+        }
+        else {
+            System.out.println();
+            System.out.println ("Opção inválida!!!");
+            System.out.println ("Esse valor é inválido para a senha!");
+            System.out.println ("Tente novamente!");
+            System.out.println ();
+            Compra.compra ();
         }
         return -1;
     }
