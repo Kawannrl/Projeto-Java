@@ -3,13 +3,14 @@ import java.text.SimpleDateFormat;
 
 public class Logs {
     static String contador [][] = new String [500][3];
-    public static void logs (int andar, int linha, int coluna, String Status){
+    public static void logs (int andar, int linha, int coluna, String Status, String Pagamento){
         int i = 0;
         while (true){
             if (null == contador [i][0]){
                 contador [i][0] = "a " + Integer.toString (andar + 1) + " | l " + Integer.toString (linha) + " | c " + Integer.toString (coluna);
                 contador [i][1] = Status;
-                contador [i][2] = Logs.data ();
+                contador [i][2] = Pagamento;
+                contador [i][3] = Logs.data ();
                 break;
             }
             i++;
@@ -36,6 +37,7 @@ public class Logs {
             System.out.println (contador [i][0]);
             System.out.println (contador [i][1]);
             System.out.println (contador [i][2]);
+            System.out.println (contador [i][3]);
             System.out.println ();
         }
         Menu.menu ();
