@@ -11,7 +11,7 @@ public class Desistencia {
             andar = Entrada.entrada_andar_desistencia ();
 
             if (andar != 1 && andar != 2 && andar != 3){
-                Erros.andar_invalido ("Andar inválido");
+                Erros.andar_invalido ("Desistência");
             }
         }
         while (andar != 1 && andar != 2 && andar != 3);
@@ -24,7 +24,7 @@ public class Desistencia {
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 30){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Desistência");
                 }
             }
             while (linha < 1 || linha > 30);
@@ -34,7 +34,7 @@ public class Desistencia {
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 50){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Desistência");
                 }
             }
             while (coluna < 1 || coluna > 50);
@@ -47,7 +47,7 @@ public class Desistencia {
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 20){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Desistência");
                 }
             }
             while (linha < 1 || linha > 20);
@@ -57,7 +57,7 @@ public class Desistencia {
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 30){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Desistência");
                 }
             }
             while (coluna < 1 || coluna > 30);
@@ -70,7 +70,7 @@ public class Desistencia {
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 10){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Desistência");
                 }
             }
             while (linha < 1 || linha > 10);
@@ -80,7 +80,7 @@ public class Desistencia {
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 15){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Desistência");
                 }
             }
             while (coluna < 1 || coluna > 15);
