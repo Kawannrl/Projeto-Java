@@ -7,6 +7,7 @@ public class Erros {
     public static void andar_invalido (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Andar inválido\n");
                 erro [j][0] = "ERR0035";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -19,6 +20,7 @@ public class Erros {
     public static void linha_invalida (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Linha inválida\n");
                 erro [j][0] = "ERR0055";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -31,6 +33,7 @@ public class Erros {
     public static void coluna_invalida (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Coluna invalida\n");
                 erro [j][0] = "ERR0045";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -43,6 +46,7 @@ public class Erros {
     public static void poltrona_invalida (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Poltrona inválida\n");
                 erro [j][0] = "ERR0005";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -55,6 +59,7 @@ public class Erros {
     public static void compra_cadeira (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Compra de cadeira já comprada\n");
                 erro [j][0] = "ERR0015";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -67,6 +72,7 @@ public class Erros {
     public static void desistencia_cadeira (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Desistência de cadeira livre\n");
                 erro [j][0] = "ERR0025";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();;
@@ -79,6 +85,7 @@ public class Erros {
     public static void iniciar_sistema (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("Inicialização de sistema\n");
                 erro [j][0] = "SYS0001";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
@@ -91,6 +98,7 @@ public class Erros {
     public static void encerrar_sistema (String Status){
         while (true){
             if (null == erro [j][0]){
+                System.out.println ("\nEncerramento do sistema");
                 erro [j][0] = "SYS0010";
                 erro [j][1] = Status;
                 erro [j][2] = Erros.data();
