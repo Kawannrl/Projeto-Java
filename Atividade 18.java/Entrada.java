@@ -8,9 +8,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             opcao = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + opcao);
-            System.out.println ();
             return opcao;
         }
         else {
@@ -30,9 +27,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             andar = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + andar);
-            System.out.println ();
             return andar;
         }
         else {
@@ -53,9 +47,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             andar = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + andar);
-            System.out.println ();
             return andar;
         }
         else {
@@ -76,9 +67,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             andar = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + andar);
-            System.out.println ();
             return andar;
         }
         else {
@@ -99,9 +87,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             linha = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + linha);
-            System.out.println ();
             return linha;
         }
         else {
@@ -122,9 +107,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             linha = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + linha);
-            System.out.println ();
             return linha;
         }
         else {
@@ -145,9 +127,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             coluna = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + coluna);
-            System.out.println ();
             return coluna;
         }
         else {
@@ -168,9 +147,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             coluna = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + coluna);
-            System.out.println ();
             return coluna;
         }
         else {
@@ -191,9 +167,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             forma_pagamento = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + forma_pagamento);
-            System.out.println ();
             return forma_pagamento;
         }
         else {
@@ -214,9 +187,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             senha = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + senha);
-            System.out.println ();
             return senha;
         }
         else {
@@ -237,9 +207,6 @@ public class Entrada {
 
         if (scanner.hasNextInt ()){
             senha = scanner.nextInt ();
-            System.out.println ();
-            System.out.println ("Você digitou o número inteiro " + senha);
-            System.out.println ();
             return senha;
         }
         else {
@@ -251,5 +218,25 @@ public class Entrada {
             Compra.compra ();
         }
         return -1;
+    }
+
+    public static Double entrada_pagamento_dinheiro (){
+        Scanner scanner = new Scanner (System.in);
+
+        Double dinheiro;
+
+        if (scanner.hasNextDouble ()){
+            dinheiro = scanner.nextDouble ();
+            return dinheiro;
+        }
+        else {
+            System.out.println();
+            System.out.println ("Opção inválida!!!");
+            System.out.println ("Esse valor é inválido para o pagamento!");
+            System.out.println ("Tente novamente!");
+            System.out.println ();
+            Compra.compra ();
+        }
+        return (double) -1;
     }
 }
