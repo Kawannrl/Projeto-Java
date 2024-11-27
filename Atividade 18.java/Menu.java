@@ -4,7 +4,7 @@ public class Menu {
         int opcao;
 
         do {
-            System.out.println ("Escolha uma das opções: \n1 - Comprar Ingresso\n2 - Cancelar Ingresso\n3 - Assentos\n4 - Histórico de Compras\n5 - Sair");
+            System.out.println ("Escolha uma das opções: \n1 - Comprar Ingresso\n2 - Cancelar Ingresso\n3 - Assentos\n4 - Histórico de Compras\n5 - Lucro do teatro\n6 - Sair");
             System.out.print ("Resposta: ");
             opcao = Entrada.entrada_menu ();
 
@@ -22,6 +22,9 @@ public class Menu {
                     Logs.imprimir ();
                     break;
                 case 5:
+                    Logs.imprimir_valor_teatro ();
+                    break;
+                case 6:
                     System.out.println ();
                     System.out.println ("O programa está sendo encerrado pelo usuário!");
                     System.out.println ("Encerrando...");
@@ -36,6 +39,6 @@ public class Menu {
                     System.out.println ("Escolha uma opção de 1 á 5!");
                     System.out.println ();
             }
-        } while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5);
+        } while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5 && opcao != 6);
     }
 }
