@@ -6,12 +6,12 @@ public class Compra {
         int andar = 0;
 
         do {
-            System.out.println ("Informe em qual andar você quer ficar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
+            System.out.println ("\nInforme em qual andar você quer ficar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
             System.out.print ("Resposta: ");
             andar = Entrada.entrada_andar_compra ();
 
             if (andar != 1 && andar != 2 && andar != 3){
-                Erros.andar_invalido ("Andar inválido");
+                Erros.andar_invalido ("Compra");
             }
         }
         while (andar != 1 && andar != 2 && andar != 3);
@@ -19,12 +19,12 @@ public class Compra {
         if (andar == 1){
 
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 30){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Compra");
                 }
             }
             while (linha < 1 || linha > 30);
@@ -34,7 +34,7 @@ public class Compra {
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 50){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Compra");
                 }
             }
             while (coluna < 1 || coluna > 50);
@@ -42,12 +42,12 @@ public class Compra {
 
         else if (andar == 2){
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 20){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Compra");
                 }
             }
             while (linha < 1 || linha > 20);
@@ -57,7 +57,7 @@ public class Compra {
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 30){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Compra");
                 }
             }
             while (coluna < 1 || coluna > 30);
@@ -65,12 +65,12 @@ public class Compra {
 
         else {
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 10){
-                    Erros.linha_invalida ("Linha inválida");
+                    Erros.linha_invalida ("Compra");
                 }
             }
             while (linha < 1 || linha > 10);
@@ -80,7 +80,7 @@ public class Compra {
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 15){
-                    Erros.coluna_invalida ("Coluna inválida");
+                    Erros.coluna_invalida ("Compra");
                 }
             }
             while (coluna < 1 || coluna > 15);
