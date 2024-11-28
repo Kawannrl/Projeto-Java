@@ -73,6 +73,7 @@ public class Logs {
             System.out.println (cont [i][1]);
             System.out.println (cont [i][2]);
             System.out.println (cont [i][3]);
+            System.out.println (cont [i][4]);
             System.out.println ();
         }
         Menu.menu ();
