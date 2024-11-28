@@ -20,7 +20,8 @@ public class Compra {
 
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.println ("Linha -> 1 - 30");
+                System.out.print ("Resposta: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 30){
@@ -30,7 +31,8 @@ public class Compra {
             while (linha < 1 || linha > 30);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.println ("Coluna -> 1 - 50: ");
+                System.out.print ("Resposta: ");
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 50){
@@ -43,7 +45,8 @@ public class Compra {
         else if (andar == 2){
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.println ("Linha -> 1 - 20: ");
+                System.out.print ("Resposta: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 20){
@@ -53,7 +56,8 @@ public class Compra {
             while (linha < 1 || linha > 20);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.println ("Coluna -> 1 - 30: ");
+                System.out.print ("Resposta: ");
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 30){
@@ -66,7 +70,8 @@ public class Compra {
         else {
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.println ("Linha -> 1 - 10: ");
+                System.out.print ("Resposta: ");
                 linha = Entrada.entrada_linha_compra ();
 
                 if (linha < 1 || linha > 10){
@@ -76,7 +81,8 @@ public class Compra {
             while (linha < 1 || linha > 10);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.println ("Coluna -> 1 - 15: ");
+                System.out.print ("Resposta: ");
                 coluna = Entrada.entrada_coluna_compra ();
 
                 if (coluna < 1 || coluna > 15){
