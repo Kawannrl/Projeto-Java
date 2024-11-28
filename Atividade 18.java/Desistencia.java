@@ -20,7 +20,7 @@ public class Desistencia {
 
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.print ("Linha -> 1 - 30: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 30){
@@ -30,7 +30,7 @@ public class Desistencia {
             while (linha < 1 || linha > 30);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.print ("Coluna -> 1 - 50: ");
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 50){
@@ -43,7 +43,7 @@ public class Desistencia {
         else if (andar == 2){
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.print ("Linha -> 1 - 20: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 20){
@@ -53,7 +53,7 @@ public class Desistencia {
             while (linha < 1 || linha > 20);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.print ("Coluna -> 1 - 30: ");
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 30){
@@ -66,7 +66,7 @@ public class Desistencia {
         else {
             do {
                 System.out.println ("\nInforme o assento escolhido: ");
-                System.out.print ("Linha: ");
+                System.out.print ("Linha -> 1 - 10: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
                 if (linha < 1 || linha > 10){
@@ -76,7 +76,7 @@ public class Desistencia {
             while (linha < 1 || linha > 10);
 
             do {
-                System.out.print ("Coluna: ");
+                System.out.print ("Coluna -> 1 - 15: ");
                 coluna = Entrada.entrada_coluna_desistencia ();
 
                 if (coluna < 1 || coluna > 15){
