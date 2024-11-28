@@ -79,7 +79,7 @@ public class Status {
     public static void cancelar (int andar, int linha, int coluna){
         if (assento [linha][coluna][andar] == true){
             assento [linha][coluna][andar] = false;
-            Devolucao.devolucao (andar,linha, coluna,"Desistência");
+            Pagamento.pagamento (andar,linha, coluna,"Desistência");
             System.out.println ("O cancelamento do assento na coluna " + coluna + " na linha " + linha + " foi realizado com sucesso!");
         }
         else {
