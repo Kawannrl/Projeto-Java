@@ -6,7 +6,7 @@ public class Desistencia {
         int andar = 0;
 
         do {
-            System.out.println ("Informe o andar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
+            System.out.println ("\nInforme o andar: \n1 - 1° Andar\n2 - 2° Andar\n3 - 3° Andar");
             System.out.print ("Resposta: ");
             andar = Entrada.entrada_andar_desistencia ();
 
@@ -19,7 +19,7 @@ public class Desistencia {
         if (andar == 1){
 
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
@@ -42,7 +42,7 @@ public class Desistencia {
 
         else if (andar == 2){
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
@@ -65,7 +65,7 @@ public class Desistencia {
 
         else {
             do {
-                System.out.println ("Informe o assento escolhido: ");
+                System.out.println ("\nInforme o assento escolhido: ");
                 System.out.print ("Linha: ");
                 linha = Entrada.entrada_linha_desistencia ();
 
